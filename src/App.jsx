@@ -1,5 +1,5 @@
 
-import Hero from "./component/herosection/Hero"
+import Hero from "./component/Hero"
 
 
 const App = () => {

@@ -1,4 +1,4 @@
-import {assets} from '../../assets'
+import car from '../../assets/car.png'
 
 const Hero = () => {
   return (
@@ -29,8 +29,8 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className='relative'>
-            <img src={assets.car}></img>
+          <div className='relative '>
+            <img src={car} className='relative z-40 h-[200px] md:[700px]'></img>
           </div>
           <div></div>
 

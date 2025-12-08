@@ -1,5 +1,6 @@
 
 import Hero from "./component/Hero"
+import ContactPage from "./contact/ContactPage"
 import Section from "./sec/Section"
 
 
@@ -9,6 +10,7 @@ const App = () => {
 
     <Hero/>
     <Section/>
+    <ContactPage/>
     </div>
   )
 }

@@ -57,9 +57,6 @@ const Hero = () => {
             
             className='relative top-28 z-40 h-[300px] md:[700px]'></motion.img>
 
-          {/*  <div className='h-[400px] w-[500px] absolute -top-10 -right-14 bg-transparent border-[40px] border-purple-400 rounded-full z-10'>
-
-            </div>*/}
             <div className='absolute -top-40 left-[200px] z-[1]'>
               <motion.h1 initial={{opacity:0,y:-600}}
               animate={{opacity:0.3,y:0}} transition={{delay:1.4,stiffness:100,damping:10}}

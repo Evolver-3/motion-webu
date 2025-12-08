@@ -8,7 +8,7 @@ const Hero = () => {
   const [open,setIsOpen]=useState(false);
  
   const varient={
-    initial:{width:'10%',height:'50%',opacity:0},
+    initial:{width:'50%',height:'100%',opacity:0},
     expanded:{width:'100%', height:'100%',opacity:1, transition:{delay:.4,duration:1}},
     
   }
@@ -52,8 +52,12 @@ const Hero = () => {
           </div>
           
           <div className='relative '>
-            <motion.img src={assets.car} variants={varient} initial="initial" 
+            <motion.img src={assets.car} 
+            variants={varient} initial="initial" 
             animate={'expanded'}
+           
+
+
             
             className='relative top-28 z-40 h-[300px] md:[700px]'></motion.img>
 

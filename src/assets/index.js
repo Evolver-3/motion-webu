@@ -6,9 +6,10 @@ import twitter from './twitter.svg'
 import car1 from './car1.png'
 import car2 from './car2.png'
 import car3 from './car3.jpg'
+import upback from './upback.jpg'
 
 export const assets={
-  menu,car,facebook,insta,twitter,car1,car2,car3
+  menu,car,facebook,insta,twitter,car1,car2,car3,upback
 }
 
 export const secData=[

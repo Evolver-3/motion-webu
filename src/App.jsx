@@ -1,5 +1,6 @@
 
 import Hero from "./component/Hero"
+import Section from "./sec/Section"
 
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
     <div>
 
     <Hero/>
+    <Section/>
     </div>
   )
 }

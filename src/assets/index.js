@@ -7,9 +7,12 @@ import car1 from './car1.png'
 import car2 from './car2.png'
 import car3 from './car3.jpg'
 import upback from './upback.jpg'
+import backu from './backu.jpg'
+import google from './google.png'
+import apple from './apple.png'
 
 export const assets={
-  menu,car,facebook,insta,twitter,car1,car2,car3,upback
+  menu,car,facebook,insta,twitter,car1,car2,car3,upback,backu,google,apple
 }
 
 export const secData=[

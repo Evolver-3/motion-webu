@@ -56,7 +56,7 @@ const Hero = () => {
             <motion.img src={assets.car} 
             variants={varient} initial="initial"
             whileInView={'expanded'}
-            className='relative top-28 z-40 h-[300px] md:w-[700px]'>
+            className='relative top-18 z-40 h-[200px] md:w-[600px]'>
             </motion.img>
 
             <div className='absolute -top-40 left-[200px] z-[1]'>
@@ -68,7 +68,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className='mt-[100px] md:mt-0 p-4 space-y-28'>
+          <div className=' md:mt-0 p-4 space-y-18'>
             <h1 className='opacity-0 text-7xl font-bold leading-tight '>
               Hero Section
             </h1>

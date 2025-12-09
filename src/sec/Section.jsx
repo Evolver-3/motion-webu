@@ -35,7 +35,7 @@ const Section = () => {
         </motion.p>
       </div>
 
-      <motion.div variants={containerVarient} initial="hidden" whileInView={"visible"} viewport={{amount:0.8}} className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7  place-items-center'>
+      <motion.div variants={containerVarient} initial="hidden" whileInView={"visible"} viewport={{amount:.1}} className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7  place-items-center'>
         {secData.map((item)=>(
           <motion.div variants={cardVarient} key={item.id} className=' text-center space-y-5'>
             <img className='shadow-2xl' src={item.image}></img>

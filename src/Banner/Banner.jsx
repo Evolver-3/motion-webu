@@ -3,7 +3,7 @@ import {motion} from 'motion/react'
 
 const Banner = () => {
   return (
-    <div className='container my-20 ml-16'>
+    <div className='container my-20'>
       <div className='background-image sm:min-h-[400px] sm:flex sm:justify-end sm:items-center rounded-lg'>
         <div className="">
           <div className="space-y-5 max-w-xl mx-auto ">

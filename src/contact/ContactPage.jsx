@@ -3,7 +3,7 @@ import { assets } from '../assets'
 
 const ContactPage = () => {
   return (
-    <div className='container mx-20 my-30'>
+    <div className='container my-30'>
       <div className='grid grid-cols-1 sm:grid-cols-2 place-items-center'>
 
         <div className='space-y-8'>

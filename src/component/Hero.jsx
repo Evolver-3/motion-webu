@@ -25,14 +25,14 @@ const Hero = () => {
           
           <div className='mt-[100px] md:mt-0 p-4 space-y-28'>
             <motion.h1 initial={{opacity:0,y:-100}}
-            animate={{opacity:1,y:0}}
+            whileInView={{opacity:1,y:0}}
             transition={{type:"spring", stiffness:100,damping:10,delay:1}}
-            className='text-6xl font-bold leading-tight ml-14'>
+            className='text-6xl font-bold leading-tight'>
               Hero Section
             </motion.h1>
 
             <motion.div initial={{opacity:0, y:100}}
-            animate={{opacity:1,y:0 }} transition={{type:"spring",
+            whileInView={{opacity:1,y:0 }} transition={{type:"spring",
               stiffness:100,
               damping:10,
               delay:1.3
@@ -52,18 +52,16 @@ const Hero = () => {
           </div>
           
           <div className='relative '>
+
             <motion.img src={assets.car} 
-            variants={varient} initial="initial" 
-            animate={'expanded'}
-           
-
-
-            
-            className='relative top-28 z-40 h-[300px] md:[700px]'></motion.img>
+            variants={varient} initial="initial"
+            whileInView={'expanded'}
+            className='relative top-28 z-40 h-[300px] md:w-[700px]'>
+            </motion.img>
 
             <div className='absolute -top-40 left-[200px] z-[1]'>
               <motion.h1 initial={{opacity:0,y:-600}}
-              animate={{opacity:0.3,y:0}} transition={{delay:1.4,stiffness:100,damping:10}}
+              whileInView={{opacity:0.3,y:0}} transition={{delay:1.4,stiffness:100,damping:10}}
               className='text-[120px] scale-150 font-bold text-gray-600 leading-none z-10'>
               Hero Section
               </motion.h1>
@@ -71,12 +69,12 @@ const Hero = () => {
           </div>
 
           <div className='mt-[100px] md:mt-0 p-4 space-y-28'>
-            <h1 className='opacity-0 text-7xl font-bold leading-tight ml-14'>
+            <h1 className='opacity-0 text-7xl font-bold leading-tight '>
               Hero Section
             </h1>
 
             <motion.div initial={{opacity:0, y:100}}
-            animate={{opacity:1,y:0 }} transition={{type:"spring",
+            whileInView={{opacity:1,y:0 }} transition={{type:"spring",
               stiffness:100,
               damping:10,
               delay:1.3

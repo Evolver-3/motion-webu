@@ -10,9 +10,13 @@ import upback from './upback.jpg'
 import backu from './backu.jpg'
 import google from './google.png'
 import apple from './apple.png'
+import phone from './phone.svg'
+import loca from './loca.svg'
+import tele from './tele.svg'
+import fb from './fb.svg'
 
 export const assets={
-  menu,car,facebook,insta,twitter,car1,car2,car3,upback,backu,google,apple
+  menu,car,facebook,insta,twitter,car1,car2,car3,upback,backu,google,apple,phone,loca,tele,fb
 }
 
 export const secData=[

@@ -3,15 +3,14 @@ import { assets } from '../assets'
 
 const ContactPage = () => {
   return (
-    <div className='container my-30 px-10 '>
+    <div className='container my-30 px-10' id='Contact'>
       <div className='grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-5'>
 
         <div className='space-y-8'>
-
           <motion.h1 initial={{opacity:0, y:-100 }}
           whileInView={{opacity:1,y:0}}
           transition={{
-            delay:0.2,
+            delay:0.6,
             type:"spring",
             stiffness:100,
             damping:10
@@ -24,7 +23,7 @@ const ContactPage = () => {
           initial={{opacity:0, y:-100 }}
           whileInView={{opacity:1,y:0}}
           transition={{
-            delay:0.4,
+            delay:0.7,
           }}
            className='flex items-center gap-5'>
 
@@ -47,7 +46,7 @@ const ContactPage = () => {
             <input className='w-[200px] lg:w-[280px] px-4 py-2 border-[1px] border-gray-400 rounded-md' type="text" placeholder='Zipcode'/>
 
           </motion.div>
-          <button className='px-2 py-2 text-lg font-bold bg-gray-600 text-white w-[365px] rounded-lg hover:bg-gray-700 hover:text-orange-400'>Contact</button>
+          <button className='px-2 py-2 text-lg font-bold bg-gray-600 text-white w-[365px] lg:w-[450px] rounded-lg hover:bg-gray-700 hover:text-orange-400'>Contact</button>
         </div>
 
         <div className='container w-120 '>

@@ -12,7 +12,7 @@ const containerVarient={
 
 const Section = () => { 
   return (
-    <div className='container my-14 space-y-8'>
+    <div className='container my-14 space-y-8' id='Section'>
       <div className='text-center max-w mx-auto space-y-2'>
 
         <motion.h1 

@@ -13,7 +13,7 @@ const Hero = () => {
   }
 
   return (
-    <main className='bg-[linear-gradient(to_right,#6b7280_50%,#9ca3af_50%)]'>
+    <main className='bg-[linear-gradient(to_right,#6b7280_50%,#9ca3af_50%)]' id='Home'>
 
       <section className='relative min-h-[750px] w-full'>
 

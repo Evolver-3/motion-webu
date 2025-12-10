@@ -18,7 +18,7 @@ const Section = () => {
         <motion.h1 
         initial={{opacity:0,y:100}} whileInView={{opacity:1,y:0}} transition={{type:"spring",stiffness:150, damping:10,delay:0.2}}
         className='text-3xl font-bold text-gray-500'>
-          New and <span className='text-orange-300'> car</span>
+          New and <span className='text-orange-300'> Classical car</span>
         </motion.h1>
 
         <motion.p 

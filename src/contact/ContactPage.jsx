@@ -55,7 +55,7 @@ const ContactPage = () => {
           <motion.img initial={{opacity:0,scale:0.5}} 
           whileInView={{opacity:1,scale:1}}
           transition={{type:'spring',stiffness:100,damping:10,delay:1}}
-           className=" w-[400px] md:w-[400px] lg:w-auto shadow-xl/60 rounded-md " src={assets.upback}></motion.img>
+           className=" w-[400px] md:w-[400px] lg:w-auto shadow-xl/60 rounded-md block " src={assets.upback}></motion.img>
 
         </div>
       </div>

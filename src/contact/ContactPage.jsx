@@ -3,6 +3,7 @@ import { assets } from '../assets'
 import React from 'react';
 
 
+
 const ContactPage = () => {
 
    const [result, setResult] = React.useState("");
@@ -12,7 +13,7 @@ const ContactPage = () => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "51c9982a-0f14-44f3-8301-421087f530a8");
+    formData.append("access_key", "assets.URL");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",

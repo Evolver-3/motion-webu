@@ -16,7 +16,7 @@ import tele from './tele.svg'
 import fb from './fb.svg'
 
 export const assets={
-  menu,car,facebook,insta,twitter,car1,car2,car3,upback,backu,google,apple,phone,loca,tele,fb
+  menu,car,facebook,insta,twitter,car1,car2,car3,upback,backu,google,apple,phone,loca,tele,fb,URL
 }
 
 export const secData=[
@@ -39,3 +39,5 @@ export const secData=[
   subtitle:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Error deserunt consectetur"
 }
 ]
+
+const URL="51c9982a-0f14-44f3-8301-421087f530a8";

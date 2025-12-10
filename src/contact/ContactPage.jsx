@@ -1,7 +1,36 @@
 import {motion} from 'motion/react'
 import { assets } from '../assets'
+import React from 'react';
+
 
 const ContactPage = () => {
+
+   const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "51c9982a-0f14-44f3-8301-421087f530a8");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("");
+      alert("Submitted Successfully")
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      alert(data.message)
+      setResult("");
+    }
+  };
   return (
     <div className='container my-30 px-10' id='Contact'>
       <div className='grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-5'>
@@ -19,6 +48,7 @@ const ContactPage = () => {
            className='text-4xl font-bold text-gray-600 font-mono'>Contact Us to buy our products from anywhere
           </motion.h1>
 
+          <form onSubmit={onSubmit} className='gap-10 flex flex-col'>
           <motion.div 
           initial={{opacity:0, y:-100 }}
           whileInView={{opacity:1,y:0}}
@@ -46,8 +76,10 @@ const ContactPage = () => {
             <input className='w-[200px] lg:w-[280px] px-4 py-2 border-[1px] border-gray-400 rounded-md' type="text" placeholder='Zipcode'/>
 
           </motion.div>
-          <button className='px-2 py-2 text-lg font-bold bg-gray-600 text-white w-[365px] lg:w-[450px] rounded-lg hover:bg-gray-700 hover:text-orange-400'>Contact</button>
+          <button className='px-2 py-2 text-lg font-bold bg-gray-600 text-white w-[365px] lg:w-[450px] rounded-lg hover:bg-gray-700 hover:text-orange-400'>{result?result:"Contact"}</button>
+          </form>
         </div>
+       
 
         <div className='container w-120 '>
 

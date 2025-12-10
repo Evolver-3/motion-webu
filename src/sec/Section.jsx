@@ -6,13 +6,13 @@ const cardVarient={
   visible:{opacity:1,y:0, transition:{type:"spring",stiffness:150,damping:10,ease:"easeInOut"}}
 }
 const containerVarient={
-  hidden:{opacity:1},
+  hidden:{opacity:0},
   visible:{opacity:1,transition:{delay:.6,staggerChildren:0.4}}
 }
 
-const Section = () => {
+const Section = () => { 
   return (
-    <div className='container my-15 space-y-8 '>
+    <div className='container my-15 space-y-8'>
       <div className='text-center max-w mx-auto space-y-2'>
 
         <motion.h1 

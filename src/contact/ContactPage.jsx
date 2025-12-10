@@ -3,8 +3,8 @@ import { assets } from '../assets'
 
 const ContactPage = () => {
   return (
-    <div className='container my-30 px-10'>
-      <div className='grid grid-cols-1 sm:grid-cols-2 gap-5'>
+    <div className='container my-30 px-10 '>
+      <div className='grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-5'>
 
         <div className='space-y-8'>
 
@@ -28,9 +28,9 @@ const ContactPage = () => {
           }}
            className='flex items-center gap-5'>
 
-            <input className='w-auto lg:w-[150px] px-4 py-2 border-[1px] border-gray-400 rounded-md' type="text" placeholder="Name"/>
+            <input className='w-[140px] lg:w-[150px] px-4 py-2 border-[1px] border-gray-400 rounded-md' type="text" placeholder="Name"/>
 
-            <input className='w-auto lg:w-[280px] px-4 py-2 border-[1px] border-gray-400 rounded-md' type="email" placeholder='Email'/>
+            <input className='w-[200px] lg:w-[280px] px-4 py-2 border-[1px] border-gray-400 rounded-md' type="email" placeholder='Email'/>
 
           </motion.div>
 
@@ -42,12 +42,12 @@ const ContactPage = () => {
           }}
           className='flex items-center gap-5'>
 
-            <input className='w-auto lg:w-[150px] px-4 py-2 border-[1px] border-gray-400 rounded-md' type="text" placeholder="Country"/>
+            <input className='w-[140px] lg:w-[150px] px-4 py-2 border-[1px] border-gray-400 rounded-md' type="text" placeholder="Country"/>
 
-            <input className='w-auto lg:w-[280px] px-4 py-2 border-[1px] border-gray-400 rounded-md' type="text" placeholder='Zipcode'/>
+            <input className='w-[200px] lg:w-[280px] px-4 py-2 border-[1px] border-gray-400 rounded-md' type="text" placeholder='Zipcode'/>
 
           </motion.div>
-          <button className='px-2 py-2 text-lg font-bold bg-gray-600 text-white w-[450px] rounded-lg hover:bg-gray-700 hover:text-orange-400'>Contact</button>
+          <button className='px-2 py-2 text-lg font-bold bg-gray-600 text-white w-[365px] rounded-lg hover:bg-gray-700 hover:text-orange-400'>Contact</button>
         </div>
 
         <div className='container w-120 '>
@@ -55,7 +55,7 @@ const ContactPage = () => {
           <motion.img initial={{opacity:0,scale:0.5}} 
           whileInView={{opacity:1,scale:1}}
           transition={{type:'spring',stiffness:100,damping:10,delay:1}}
-           className=" mx-auto shadow-xl/60 rounded-md " src={assets.upback}></motion.img>
+           className=" w-[400px] md:w-[400px] lg:w-auto shadow-xl/60 rounded-md " src={assets.upback}></motion.img>
 
         </div>
       </div>

@@ -4,6 +4,7 @@ import ContactPage from "./contact/ContactPage"
 import Footer from "./Footer/Footer"
 
 import Section from "./sec/Section"
+
 const App = () => {
   return (
     <div className="flex flex-col justify-center items-center  ">
@@ -13,6 +14,7 @@ const App = () => {
     <ContactPage/>
     <Banner/>
     <Footer/>
+    
     
     
     </div>
